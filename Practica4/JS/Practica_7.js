@@ -25,7 +25,7 @@ class Agenda {
         if (this.contactos.length === 0) {
             alert("La agenda está vacía.");
         } else {
-            let lista = "Contactos en la agenda:";
+            let lista = "Contactos en la agenda:\n";
             this.contactos.forEach(c => { lista +=  `${c.nombre}: ${c.telefono}\n`; });
             alert(lista);
             console.log(lista);
