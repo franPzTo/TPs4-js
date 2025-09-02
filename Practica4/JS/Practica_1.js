@@ -1,5 +1,5 @@
 class Vehiculo{
-    constructor(tipo, marca, color, modelo, amio){
+    constructor(tipo, marca, color, modelo, anio){
         this.tipo=tipo;
         this.marca=marca;
         this.color=color;
@@ -26,7 +26,7 @@ class Vehiculo{
     info(){
         const estado = this.encendido ? "encendido" : "apagado";
         document.write(`
-            <ul>Vehiculo:${this.tipo}
+            <ul><h2>Info. del Vehiculo:</h2>
             <li>Tipo: ${this.tipo}</li>
             <li>Marca: ${this.marca}</li>
             <li>Modelo: ${this.modelo}</li>
@@ -49,4 +49,5 @@ vehiculo2.info();
 vehiculo2.encender();
 vehiculo2.encender();
 vehiculo2.agapar();
+vehiculo2.encender();
 vehiculo2.info();
